@@ -10,6 +10,9 @@ dependencies:
     version: 11.1.0
 
 devDependencies:
+  '@types/node':
+    specifier: ^20.9.0
+    version: 20.9.0
   ava:
     specifier: ^5.3.1
     version: 5.3.1

@@ -19,11 +19,12 @@
   "scripts": {
     "dev": "ts-node ./src/cli.ts",
     "clean": "rimraf ./dist/ ./exec/",
-    "build": "npm run clean && tsc",
-    "test": "npm run build && ava --verbose",
-    "bundle": "npm run build && pkg . --out-dir ./exec/"
+    "build": "pnpm run clean && tsc",
+    "test": "node --require ts-node/register --test ./src/index.test.ts",
+    "bundle": "pnpm run build && pkg . --out-dir ./exec/"
   },
   "devDependencies": {
+    "@types/node": "^20.9.0",
     "ava": "^5.3.1",
     "pkg": "^5.8.1",
     "rimraf": "^5.0.5",
