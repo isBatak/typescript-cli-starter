@@ -2,8 +2,8 @@
   "name": "typescript-cli-starter",
   "private": true,
   "version": "1.0.0",
-  "description": "A simple and zero-opinion typescript starter template for building cross-platform command line applications.",
-  "author": "Khalid Zoabi <kzoabi@outlook.com>",
+  "description": "A Typescript CLI starter template.",
+  "author": "Ivica Batinić <ivicabatinic123@gmail.com",
   "keywords": [
     "typescript",
     "cli",
@@ -24,13 +24,13 @@
     "bundle": "npm run build && pkg . --out-dir ./exec/"
   },
   "devDependencies": {
-    "ava": "^2.2.0",
-    "pkg": "^4.4.0",
-    "rimraf": "^2.6.3",
-    "ts-node": "^8.3.0",
-    "typescript": "^3.5.3"
+    "ava": "^5.3.1",
+    "pkg": "^5.8.1",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   },
   "dependencies": {
-    "commander": "^2.20.0"
+    "commander": "^11.1.0"
   }
 }
