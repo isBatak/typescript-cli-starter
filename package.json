@@ -2,6 +2,7 @@
   "name": "typescript-cli-starter",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "description": "A Typescript CLI starter template.",
   "author": "Ivica Batinić <ivicabatinic123@gmail.com",
   "keywords": [
