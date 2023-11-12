@@ -15,8 +15,6 @@ node_modules/
 dist/
 build/
 out/
-*.js
-*.js.map
 
 # Miscellaneous
 .DS_Store
