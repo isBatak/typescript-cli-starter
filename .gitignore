@@ -15,6 +15,7 @@ node_modules/
 dist/
 build/
 out/
+exec/
 
 # Miscellaneous
 .DS_Store

@@ -3,12 +3,12 @@ import test from 'node:test'
 
 import { orderPizza } from './index'
 
-test.before(async (t) => {
+test.before(async () => {
   console.log('Starting tests!')
 })
 
-test('can order a pizza', async (t) => {
-  let result = await orderPizza({
+test('can order a pizza', async () => {
+  const result = await orderPizza({
     peppers: false,
     pineapple: false,
     bbqSauce: false,

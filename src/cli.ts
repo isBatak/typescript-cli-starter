@@ -1,10 +1,14 @@
 #!/usr/bin/env node
 
-import program from 'commander'
+import { Command } from 'commander'
 
 import { orderPizza } from './index'
 
+const program = new Command()
+
 program
+  .name('pizza')
+  .description('Order a pizza')
   .version('0.1.0')
   .option('-p, --peppers', 'Add peppers')
   .option('-P, --pineapple', 'Add pineapple')
@@ -16,9 +20,18 @@ program
   )
   .parse(process.argv)
 
+interface Options {
+  peppers: boolean
+  pineapple: boolean
+  bbqSauce: boolean
+  cheese: string
+}
+
+const options = program.opts<Options>()
+
 orderPizza({
-  peppers: program.peppers,
-  pineapple: program.pineapple,
-  bbqSauce: program.bbqSauce,
-  cheeseType: program.cheese,
+  peppers: options.peppers,
+  pineapple: options.pineapple,
+  bbqSauce: options.bbqSauce,
+  cheeseType: options.cheese,
 }).then((result) => console.log(result.message))
