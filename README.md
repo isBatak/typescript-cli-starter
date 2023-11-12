@@ -1,6 +1,6 @@
 # typescript-cli-starter
 
-A simple and zero-opinion typescript starter template for building cross-platform command line applications.
+A Typescript CLI starter template.
 
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/keywords/isBatak/typescript-cli-starter.svg?style=flat-square)
 
