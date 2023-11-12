@@ -21,17 +21,24 @@
     "clean": "rimraf ./dist/ ./exec/",
     "build": "pnpm run clean && tsc",
     "test": "node --require ts-node/register --test ./**/*.test.ts",
-    "bundle": "pnpm run build && pkg . --out-dir ./exec/"
+    "bundle": "pnpm run build && pkg . --out-dir ./exec/",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "devDependencies": {
     "@types/node": "^20.9.0",
     "ava": "^5.3.1",
     "pkg": "^5.8.1",
+    "prettier": "3.0.3",
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "commander": "^11.1.0"
+    "commander": "^11.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0"
   }
 }

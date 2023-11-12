@@ -16,6 +16,8 @@ Includes:
 - [Node Test Runner](https://nodejs.org/api/test.html), for writing good tests
 - [Commander](https://www.npmjs.com/package/commander), for building CLI applications
 - [Pkg](https://www.npmjs.com/package/pkg), for building cross-platform native executables
+- [Prettier](https://prettier.io/), for formatting your code
+- [ESLint](https://eslint.org/), for linting your code
 
 Your application will be installable from `npm` or by sharing your native executables.
 
