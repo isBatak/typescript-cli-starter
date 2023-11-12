@@ -25,12 +25,11 @@
     "bundle": "pnpm run build && pkg . --out-dir ./exec/",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  },
   "devDependencies": {
     "@types/node": "^20.9.0",
-    "ava": "^5.3.1",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
     "pkg": "^5.8.1",
     "prettier": "3.0.3",
     "rimraf": "^5.0.5",
